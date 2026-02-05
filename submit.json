@@ -1,0 +1,13 @@
+{
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "DarronBrown88@gmail.com",
+        "ascAppId": "6758747489"
+      },
+      "android": {
+        "track": "internal"
+      }
+    }
+  }
+}
