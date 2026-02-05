@@ -10,8 +10,24 @@ jobs:
     type: build
     params:
       platform: android
-
+      profile: production
+  
   build_ios:
     type: build
     params:
       platform: ios
+      profile: production
+  
+  submit_android:
+    needs: [build_android]
+    type: submit
+    params:
+      platform: android
+      profile: production
+  
+  submit_ios:
+    needs: [build_ios]
+    type: submit
+    params:
+      platform: ios
+      profile: production
